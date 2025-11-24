@@ -1,0 +1,48 @@
+<app-section-header title="News and Events"></app-section-header>
+<app-container>
+  <div class="grid grid-cols-1 lg:grid-cols-5 gap-x-4 py-8">
+    <div class="col-span-3 grid grid-cols-1 gap-y-5">
+      <div *ngFor="let news of newsData" class="w-full">
+        <div class="rounded-md overflow-hidden my-8">
+          <div class="h-[400px]">
+            <img alt="Image Mask" class="w-full h-full" [src]="news.image" />
+          </div>
+          <div class="flex flex-row my-2 gap-x-4">
+            <div class="flex flex-row">
+              <img
+                alt="Image Mask"
+                width="{12}"
+                height="{12}"
+                src="assets/News/icons/news-by-Icon.svg"
+              />
+              <p class="text-septenary ml-1 text-xs">{{ news.by }}</p>
+            </div>
+            <div class="flex flex-row">
+              <img
+                alt="Image Mask"
+                width="{24}"
+                height="{24}"
+                src="assets/News/icons/news-comment-Icon.svg"
+              />
+              <p class="text-septenary ml-1 text-xs">{{ news.date }}</p>
+            </div>
+          </div>
+          <h2 class="text-4xl font-bold leading-snug my-2">
+            {{ news.title }}
+          </h2>
+          <p class="text-septenary ml-1">{{ news.description }}</p>
+          <div class="flex flex-row items-center gap-x-2 my-4">
+            Read More
+            <img
+              alt="Image Mask"
+              width="{24}"
+              height="{24}"
+              src="assets/News/icons/right_arrow_icon.svg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <app-info-panel></app-info-panel>
+  </div>
+</app-container>

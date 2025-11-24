@@ -1,0 +1,54 @@
+<app-section-header title="Pharmacy"></app-section-header>
+<app-container>
+  <div class="flex flex-col items-center md:flex-row gap-x-12">
+    <div class="flex flex-col items-center justify-start w-1/2 py-8 md:py-0">
+      <img src="assets/pharmacy/pharmacy-primary-image.png" />
+    </div>
+    <div class="flex flex-col items-start justify-start gap-y-8 text-septenary">
+      <div class="leading-loose">
+        Satyam Hospital's Pharmacy is committed to providing you with easy
+        access to a wide range of quality medications and healthcare products.
+        Our goal is to ensure that you receive the medications you need for your
+        health and well-being.
+      </div>
+      <div
+        class="flex flex-col md:flex-row items-center justify-center gap-x-12"
+      >
+        <img src="assets/pharmacy/Pharmacy-Image.png" />
+        <div class="flex flex-col leading-loose py-8 md:py-0">
+          <div>
+            Our pharmacy is staffed with pharmacists who are dedicated to
+            ensuring the safety and effectiveness of the medications we
+            dispense. We focus on providing personalized care and information to
+            help you make informed decisions about your health.
+          </div>
+          <div>
+            We are available to answer your questions, provide dosing
+            instructions, and offer guidance.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col items-start md:flex-row pt-8 md:pt-24">
+    <div class="md:w-1/3 grid grid-cols-1 items-start py-4"></div>
+    <div
+      class="w-full h-full flex flex-col text-start items-start justify-start"
+    >
+      <div class="font-bold text-xl">
+        We offer the following pharmacy services:
+      </div>
+      <div class="py-8 flex flex-col items-start justify-center gap-y-10">
+        <div
+          class="flex flex-row items-center justify-center gap-x-4"
+          *ngFor="let service of services"
+        >
+          <img src="assets/pharmacy/arrow.svg" />
+          <div>
+            {{ service }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</app-container>

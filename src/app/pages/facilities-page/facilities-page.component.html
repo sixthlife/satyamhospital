@@ -1,0 +1,24 @@
+<app-section-header title="Facilities"></app-section-header>
+<app-container>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-8 py-14">
+    <div *ngFor="let facility of facilities">
+      <div
+        class="px-2 flex flex-col items-start justify-start rounded-md overflow-hidden border border-slate-200 bg-white text-slate-950"
+      >
+        <div class="py-4 px-2">
+          <img
+            width="{24}"
+            height="{24}"
+            alt="Icon"
+            class="w-10 h-10"
+            [src]="facility.Icon"
+          />
+          <div class="font-bold my-2">{{ facility.title }}</div>
+          <div class="my-1 text-septenary text-sm">
+            {{ facility.description }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</app-container>

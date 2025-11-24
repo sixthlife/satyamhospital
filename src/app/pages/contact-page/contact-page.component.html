@@ -1,0 +1,205 @@
+<app-section-header title="Contact"></app-section-header>
+<div
+  class="flex flex-col py-12 md:py-24 md:flex-row items-center justify-center gap-x-8"
+>
+  <app-section-left>
+    <div class="text-sm my-1 font-bold text-senary">
+      <span class="w-[3px] h-3 bg-senary rounded-md inline-block mr-1"></span>
+      Contact us
+    </div>
+    <div
+      class="text-secondary w-full md:w-2/3 text-2xl md:text-4xl font-bold leading-relaxed my-2"
+    >
+      Do You Have Any Questions?
+    </div>
+    <div class="text-septenary w-full md:w-3/4 my-4 leading-relaxed text-sm">
+      We're here to assist you. Whether you have questions about our services,
+      want to schedule an appointment, or need support, our team is ready to
+      help.
+    </div>
+    <div class="flex flex-row items-center gap-x-8 my-2">
+      <a
+        target="_blank"
+        href="https://www.facebook.com/profile.php?id=100088537181738"
+      >
+        <img src="assets/footer/facebook.svg" />
+      </a>
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/company/satyam-hospital-patna"
+      >
+        <img src="assets/footer/linkedin.svg" />
+      </a>
+      <a target="_blank" href="https://twitter.com/SatyamHospPatna">
+        <img src="assets/footer/twitter.svg" />
+      </a>
+    </div>
+    <div
+      class="flex flex-row items-center justify-start mt-8 gap-x-4 rounded-md bg-gray-200 p-2"
+    >
+      <img class="h-10 w-10" src="assets/Insurance/whatsapp.svg" />
+      <div class="text-secondary">
+        <div class="font-light">Request A WhatsApp:</div>
+        <div class="font-bold">(933) 443-9782</div>
+      </div>
+    </div>
+  </app-section-left>
+  <app-section-right>
+    <form class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+      <div>
+        <label
+          htmlFor="first-name"
+          class="block text-sm font-medium text-warm-gray-900"
+        >
+          First name
+        </label>
+        <div class="mt-1">
+          <input
+            type="text"
+            name="first-name"
+            id="first-name"
+            autoComplete="given-name"
+            class="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm bg-gray-200"
+          />
+        </div>
+      </div>
+      <div>
+        <label
+          htmlFor="last-name"
+          class="block text-sm font-medium text-warm-gray-900"
+        >
+          Last name
+        </label>
+        <div class="mt-1">
+          <input
+            type="text"
+            name="last-name"
+            id="last-name"
+            autoComplete="family-name"
+            class="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm bg-gray-200"
+          />
+        </div>
+      </div>
+      <div>
+        <label
+          htmlFor="email"
+          class="block text-sm font-medium text-warm-gray-900"
+        >
+          Email
+        </label>
+        <div class="mt-1">
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autoComplete="email"
+            class="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm bg-gray-200"
+          />
+        </div>
+      </div>
+      <div>
+        <div class="flex justify-between">
+          <label
+            htmlFor="phone"
+            class="block text-sm font-medium text-warm-gray-900"
+          >
+            Phone
+          </label>
+          <span id="phone-optional" class="text-sm text-warm-gray-500">
+            Optional
+          </span>
+        </div>
+        <div class="mt-1">
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            autoComplete="tel"
+            class="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm bg-gray-200"
+            aria-describedby="phone-optional"
+          />
+        </div>
+      </div>
+      <div class="sm:col-span-2">
+        <label
+          htmlFor="subject"
+          class="block text-sm font-medium text-warm-gray-900"
+        >
+          Subject
+        </label>
+        <div class="mt-1">
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            class="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm bg-gray-200"
+          />
+        </div>
+      </div>
+      <div class="sm:col-span-2">
+        <div class="flex justify-between">
+          <label
+            htmlFor="message"
+            class="block text-sm font-medium text-warm-gray-900"
+          >
+            Message
+          </label>
+          <span id="message-max" class="text-sm text-warm-gray-500">
+            Max. 500 characters
+          </span>
+        </div>
+        <textarea
+          class="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm bg-gray-200"
+          aria-describedby="message-max"
+        ></textarea>
+      </div>
+      <div class="sm:col-span-2 sm:flex sm:justify-end">
+        <button
+          type="submit"
+          class="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-senary px-6 py-3 text-base font-medium text-white shadow-sm"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+  </app-section-right>
+</div>
+<app-container>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-y-8 gap-x-8">
+    <div
+      class="text-center flex items-center justify-start flex-col px-4 py-4 shadow-lg bg-tertiary"
+    >
+      <img src="assets/Insurance/Contact.svg" />
+      <div class="text-secondary my-2">Contacts</div>
+      <div class="text-septenary text-xs w-1/2 my-1">(+91) 0612 2295668</div>
+      <div class="text-septenary text-xs w-1/2 my-1">(+91) 969326 4324</div>
+    </div>
+    <div
+      class="text-center flex items-center justify-start flex-col px-4 py-4 shadow-lg bg-tertiary"
+    >
+      <img src="assets/Insurance/Mail.svg" />
+      <div class="text-secondary my-2">Email</div>
+      <div class="text-septenary text-xs w-1/2">satyamcares@gmail.com</div>
+    </div>
+    <div
+      class="text-center flex items-center justify-start flex-col px-4 py-4 shadow-lg bg-tertiary"
+    >
+      <img src="assets/Contact/Location.svg" />
+      <div class="text-secondary my-2">Location</div>
+      <div class="text-septenary text-xs md:w-1/2">
+        Satyam Hospital, Sheikhpura, Brahamasthan Rd, Pillar No 68, Behind
+        leather world showroom, Patna 800014
+      </div>
+    </div>
+  </div>
+  <div class="h-96 py-4">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14390.351303542035!2d85.07582351738276!3d25.61860911022409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x140d7eefe07c811d%3A0xe1c8d874fc29aef9!2sSatyam%20Hospital!5e0!3m2!1sen!2s!4v1695218900988!5m2!1sen!2s"
+      class="w-full h-full"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</app-container>

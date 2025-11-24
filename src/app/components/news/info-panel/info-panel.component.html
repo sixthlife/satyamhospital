@@ -1,0 +1,70 @@
+<div class="flex-col col-span-2 w-full">
+  <div class="flex flex-row items-center">
+    <img
+      alt="Image Mask"
+      width="{14}"
+      height="{14}"
+      src="assets/News/news_right_icon.svg"
+    />
+    <p class="text-lg font-bold ml-2">Search</p>
+  </div>
+  <div class="my-2">
+    <Input class="w-full" placeholder="Search..." />
+  </div>
+  <div class="flex flex-row items-center my-4">
+    <img
+      alt="Image Mask"
+      width="{14}"
+      height="{14}"
+      src="assets/News/news_right_icon.svg"
+    />
+    <p class="text-lg font-bold ml-2">Popular Post</p>
+  </div>
+  <div class="my-2">
+    <div *ngFor="let post of postData" class="flex flex-row my-4">
+      <img alt="Image Mask" class="w-14 h-14" [src]="post.image" />
+      <div class="flex flex-col items-start justify-center ml-2">
+        <div class="flex flex-row">
+          <img
+            alt="Image Mask"
+            class="w-[25px] h-[25px]"
+            src="assets/News/calender_icon.svg"
+          />
+          <p class="ml-1">{{ post.date }}</p>
+        </div>
+        <h2 class="my-2 text-base font-bold">{{ post.title }}</h2>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="flex flex-row items-center my-4">
+      <img
+        alt="Image Mask"
+        width="{14}"
+        height="{14}"
+        src="assets/News/news_right_icon.svg"
+      />
+      <p class="text-lg font-bold ml-2">Popular Tags</p>
+    </div>
+    <div class="flex flex-row">
+      <div class="text-septenary bg-quinary px-2 py-2">Covid 19</div>
+    </div>
+  </div>
+  <div
+    class="my-4 w-full bg-secondary text-tertiary p-8 rounded-tl-[80px] rounded-br-[80px]"
+  >
+    <div class="flex flex-row items-center my-4">
+      <img alt="Image Mask" class="w-2" src="assets/News/news_right_icon.svg" />
+      <p class="text-base font-bold ml-2">Newsletter</p>
+    </div>
+    <div class="my-2 text-sm w-full">
+      Subscribe for get more help and information
+    </div>
+    <div class="relative">
+      <Input
+        placeholder="Email Address"
+        class="w-36 p-1 placeholder:text-black placeholder:text-sm"
+      />
+    </div>
+  </div>
+</div>

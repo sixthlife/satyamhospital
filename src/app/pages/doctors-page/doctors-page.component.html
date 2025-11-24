@@ -1,0 +1,33 @@
+<app-section-header title="Our Doctors"></app-section-header>
+<app-container>
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-y-16 gap-x-6 my-8">
+    <div
+      class="flex flex-col items-center justify-center bg-white rounded-md overflow-hidden text-center border border-slate-200 text-slate-950 shadow-sm"
+      *ngFor="let doctor of Doctors"
+    >
+      <div class="font-bold my-1 flex flex-col space-y-1.5 p-6">
+        {{ doctor.name }}
+      </div>
+      <div class="flex flex-col items-center p-6 pt-0">
+        <div class="font-bold text-lg text-senary font-base my-1 mb-4">
+          {{ doctor.expert }}
+        </div>
+        <div class="text-[11px] text-[#333F4D] text-center">
+          {{ doctor.time }}
+        </div>
+      </div>
+      <div
+        class="flex flex-row space-x-2 justify-center md:items-center md:justify-center lg:justify-start my-2 items-center p-6 pt-0"
+      >
+        <a href="/contact">
+          <div
+            class="bg-senary text-white rounded-md px-2 py-2 flex flex-row gap-x-2"
+          >
+            Get Appointment
+            <img src="assets/Icons/Button-Forward.svg" />
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</app-container>

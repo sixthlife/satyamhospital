@@ -1,0 +1,113 @@
+<div class="flex flex-col md:flex-row text-tertiary overflow-hidden">
+  <div class="w-full md:w-2/4 h-full bg-primary">
+    <a
+      [routerLink]="['/']"
+      class="bg-primary py-5 flex items-center justify-center h-full cliped md:translate-x-16"
+    >
+      <img class="w-64 md:-translate-x-24" src="assets/satyam.svg" />
+    </a>
+  </div>
+  <div class="bg-green-500 w-full flex flex-col">
+    <div
+      class="bg-quaternary h-2/4 flex flex-row items-center justify-end gap-x-4 py-4 pr-24"
+    >
+      <div class="text-tertiary">Follow on:</div>
+      <div class="flex flex-row gap-x-2">
+        <a
+          target="_blank"
+          href="https://www.facebook.com/profile.php?id=100088537181738"
+        >
+          <img class="cursor-pointer" src="assets/Icons/facebook.svg" />
+        </a>
+        <a target="_blank" href="https://twitter.com/SatyamHospPatna">
+          <img class="cursor-pointer" src="assets/Icons/twitter.svg" />
+        </a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/company/satyam-hospital-patna"
+        >
+          <img class="cursor-pointer" src="assets/Icons/linkedin.svg" />
+        </a>
+        <!-- <img class="cursor-pointer" src="assets/Icons/instagram.svg" /> -->
+      </div>
+    </div>
+    <div
+      class="bg-secondary hidden h-full md:flex flex-row items-center text-sm py-2"
+    >
+      <div
+        class="flex flex-col md:flex-row items-center md:items-end w-full justify-center gap-y-12 md:gap-y-0 md:gap-x-4 md:pr-24"
+      >
+        <app-hospital-info
+          icon="assets/Icons/Phone.svg"
+          title="Hospital Help Line:"
+          description="(933) 443-9782"
+        />
+        <span class="hidden md:inline-block h-10 w-[2px] bg-tertiary"></span>
+        <app-hospital-info
+          icon="assets/Icons/Clock.svg  "
+          title="24x 7 Emergency"
+          titleVariant="danger"
+          description="Trauma Center"
+        />
+        <span class="hidden md:inline-block h-10 w-[2px] bg-tertiary"></span>
+        <app-hospital-info
+          icon="assets/Icons/Location.svg"
+          title="Satyam Hospital Building, Brahamasthan"
+          description="Sheikhpura, Patna 800014 "
+        />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-tertiary py-4 text-sm">
+  <app-container>
+    <div class="flex flex-col md:flex-row items-center justify-between">
+      <div class="flex flex-row items-center justify-center flex-wrap gap-x-4">
+        <a
+          [routerLink]="['/']"
+          routerLinkActive="router-link-active"
+          class="hover:bg-quinary cursor-pointer px-[4px] py-2"
+          >Home</a
+        >
+        <a
+          [routerLink]="['/facilities']"
+          routerLinkActive="router-link-active"
+          class="hover:bg-quinary cursor-pointer px-[4px] py-2"
+          >Facilities</a
+        >
+        <a
+          [routerLink]="['/services']"
+          routerLinkActive="router-link-active"
+          class="hover:bg-quinary cursor-pointer px-[4px] py-2"
+          >Services</a
+        >
+        <a
+          routerLink="/insurance"
+          class="hover:bg-quinary cursor-pointer px-[4px] py-2"
+        >
+          Medical Insurance
+        </a>
+        <a
+          routerLink="/news"
+          class="hover:bg-quinary cursor-pointer px-[4px] py-2"
+        >
+          News
+        </a>
+        <a
+          [routerLink]="['/contact']"
+          routerLinkActive="router-link-active"
+          class="hover:bg-quinary cursor-pointer px-[4px] py-2"
+          >Contact</a
+        >
+      </div>
+      <div class="flex flex-row items-center gap-x-4">
+        <a
+          [routerLink]="['/ambulance-services']"
+          routerLinkActive="router-link-active"
+          class="hover:bg-quinary text-senary cursor-pointer px-[4px] py-2"
+          >Ambulance Service</a
+        >
+      </div>
+    </div>
+  </app-container>
+</div>

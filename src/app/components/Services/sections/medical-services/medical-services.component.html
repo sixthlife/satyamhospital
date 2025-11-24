@@ -1,0 +1,34 @@
+<div id="services" class="bg-quinary py-8">
+  <app-container>
+    <div class="flex flex-row items-center justify-center">
+      <div class="text-sm my-1 font-bold text-senary">
+        <span class="w-[3px] h-3 bg-senary rounded-md inline-block mr-1"></span>
+        Medical Specialties
+        <span class="w-[3px] h-3 bg-senary rounded-md inline-block ml-1"></span>
+      </div>
+    </div>
+    <div
+      class="text-secondary md:text-2xl text-center lg:text-5xl font-bold leading-relaxed my-2"
+    >
+      Medical services
+    </div>
+    <div
+      class="my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-8"
+    >
+      <div
+        *ngFor="let service of medicalServices"
+        class="bg-white border-[#E3E3E3] px-4 py-6 border-2 my-4 flex flex-col items-start justify-start relative"
+      >
+        <img
+          width="{42}"
+          height="{42}"
+          alt="Icon"
+          class="absolute top-0 -translate-y-1/2 right-6"
+          [src]="service.icon"
+        />
+        <div class="font-bold">{{ service.title }}</div>
+        <div class="text-septenary mt-2">{{ service.description }}</div>
+      </div>
+    </div>
+  </app-container>
+</div>

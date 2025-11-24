@@ -1,0 +1,91 @@
+<app-section-header title="Job Vacancies"></app-section-header>
+<app-container>
+  <div class="flex flex-col-reverse md:flex-row gap-x-8">
+    <div class="flex flex-col">
+      <div class="text-4xl font-bold my-4">Current Openings</div>
+      <div class="text-senary">
+        Join the Satyam Hospital team, contribute to our mission
+      </div>
+      <div class="text-septenary my-4 leading-relaxed">
+        Join the Satyam Hospital team and contribute to our mission of providing
+        exceptional healthcare services. We are always looking for dedicated
+        professionals who share our commitment to patient care and excellence.
+      </div>
+      <div class="flex flex-col">
+        <div class="my-8 flex flex-col items-start" *ngFor="let job of jobs">
+          <div class="text-xl font-bold my-2">{{ job.title }}</div>
+          <div>{{ job.description }}</div>
+          <div class="text-xl font-bold my-6">Requirement</div>
+          <div class="flex gap-x-24 my-2">
+            <div class="font-bold w-24">Qualification</div>
+            <div>{{ job.qualification }}</div>
+          </div>
+          <div class="flex gap-x-24 my-2">
+            <div class="font-bold w-24">Experience</div>
+            <div>{{ job.experience }}</div>
+          </div>
+          <div
+            class="flex flex-row space-x-5 mt-8 justify-center md:items-center md:justify-center lg:justify-start"
+          >
+            <a
+              [routerLink]="['/contact']"
+              class="text-white bg-senary py-2 cursor-pointer px-8 rounded-md flex flex-row gap-x-4 items-center justify-center hover:scale-105 duration-200"
+            >
+              <div>Apply Now</div>
+              <div>
+                <img src="assets/Icons/Button-Forward.svg" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="md:w-2/3 my-4 text-start flex flex-col items-center">
+      <div class="text-xl font-bold">REQUEST DOCTOR’S CONSULTATION</div>
+      <div class="text-sm text-start my-1">
+        Virtual Appoinment / Hospital Visit
+      </div>
+      <div class="flex flex-col items-start justify-start my-8">
+        <div class="flex flex-col items-center justify-center">
+          <div class="flex items-center justify-center gap-x-4 my-2">
+            <img src="assets/Jobs/Doctor.svg" />
+            <div class="text-septenary font-bold">Choose The Doctor</div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <div class="flex items-center justify-center gap-x-4 my-2">
+            <img src="assets/Jobs/Slot.svg" />
+            <div class="text-septenary font-bold">Book a slot</div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <div class="flex items-center justify-center gap-x-4 my-2">
+            <img src="assets/Jobs/Payment.svg" />
+            <div class="text-septenary font-bold">Make payment</div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <div class="flex items-center justify-center gap-x-4 my-2">
+            <img src="assets/Jobs/Call.svg" />
+            <div class="text-septenary font-bold">
+              Video Call or In Person Consultation
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="my-4 rounded-md bg-secondary text-tertiary inline-block py-4 px-8"
+      >
+        Book Appoinment
+      </div>
+      <div
+        class="my-4 bg-secondary text-tertiary px-14 py-8 rounded-tl-[80px] rounded-br-[80px]"
+      >
+        <div class="font-bold text-lg my-4">Why Satyam Hospital ?</div>
+        <div class="my-2">Round-the-clock doctor availability</div>
+        <div class="my-2">Broad range of Specialties</div>
+        <div class="my-2">Access health records online</div>
+      </div>
+    </div>
+  </div>
+</app-container>
